@@ -5,7 +5,7 @@ const app = express();
 
 //not including a file name defaults to the 'index' file in these directories
 const apiRoutes = require('./routes/apiRoutes');
-//const htmlRoutes = require('./routes/htmlRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
 // parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
@@ -16,7 +16,7 @@ app.use(express.static('public'));
 
 // Use apiRoutes
 app.use(apiRoutes);
-//app.use('/', htmlRoutes);
+app.use(htmlRoutes);
 
 
 

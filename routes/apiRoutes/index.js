@@ -2,7 +2,7 @@ const router = require("express").Router();
 const fs = require("fs");
 const path = require("path");
 
-const dbNotes = require("../../db/db.json");
+const {dbNotes} = require("../../db/db.json");
 
 router.get("/api/notes", (req, res) => {
   res.json(dbNotes);
