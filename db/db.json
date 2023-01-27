@@ -1,6 +1,12 @@
-[
+{
+  "dbNotes": [
     {
-        "title":"Note Title",
-        "text":"Note text"
+      "title": "Note Title",
+      "text": "Note text"
+    },
+    {
+      "title": "Note TESTING",
+      "text": "Text TESTING"
     }
-]
+  ]
+}
